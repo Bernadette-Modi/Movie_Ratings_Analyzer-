@@ -15,4 +15,4 @@ print(f"Highest Rating: {highest_rating}")
 print(f"Lowest Rating: {lowest_rating}")
 print(f"Rating Count for the movie {movie}: ")
 for rating, count in rating_counts.items():
-    print(f"⭐{rating} stars: {count} time(s)")
+    print(f"{rating}⭐: {count} time(s)")
