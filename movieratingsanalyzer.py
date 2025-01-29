@@ -11,7 +11,7 @@ while True:
     movie = input("Enter the movie you want to rate: ")
     rate = input("Enter a rating (1-5) or 'over' to finish: ")
     if rate.lower() == 'over':
-        break
+        break 
     
 
 average_rating = sum(ratings) / len(ratings)
