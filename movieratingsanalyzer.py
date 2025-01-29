@@ -3,7 +3,10 @@ from array import *
 movie = input("Enter the movie title: ")
 rate = (input("Enter movie ratings (1-5) separated by spaces: ")).split()
 
-ratings = array('i', [int(num) for num in rate])
+ratings = array('i', [])
+print("🎬 Movie Rating System 🎬")
+print("Enter ratings from 1 to 5. Type 'over' to stop.")
+
 average_rating = sum(ratings) / len(ratings)
 highest_rating = max(ratings)
 lowest_rating = min(ratings)
