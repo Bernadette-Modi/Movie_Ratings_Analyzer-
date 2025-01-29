@@ -9,7 +9,7 @@ highest_rating = max(ratings)
 lowest_rating = min(ratings)
 rating_counts = {i: ratings.count(i) for i in range(1,6)}
 
-
+#Print statements
 print(f"Average Rating: {average_rating:.2f}")
 print(f"Highest Rating: {highest_rating}")
 print(f"Lowest Rating: {lowest_rating}")
