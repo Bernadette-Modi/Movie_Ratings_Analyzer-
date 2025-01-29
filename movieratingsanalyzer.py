@@ -7,6 +7,13 @@ ratings = array('i', [])
 print("🎬 Movie Rating System 🎬")
 print("Enter ratings from 1 to 5. Type 'over' to stop.")
 
+while True:
+    movie = input("Enter the movie you want to rate: ")
+    rate = input("Enter a rating (1-5) or 'over' to finish: ")
+    if rate.lower() == 'over':
+        break
+    
+
 average_rating = sum(ratings) / len(ratings)
 highest_rating = max(ratings)
 lowest_rating = min(ratings)
