@@ -13,6 +13,6 @@ rating_counts = {i: ratings.count(i) for i in range(1,6)}
 print(f"Average Rating: {average_rating:.2f}")
 print(f"Highest Rating: {highest_rating}")
 print(f"Lowest Rating: {lowest_rating}")
-print(f"Rating Counts for the movie {movie}: ")
+print(f"Rating Count for the movie {movie}: ")
 for rating, count in rating_counts.items():
     print(f"⭐{rating} stars: {count} time(s)")
