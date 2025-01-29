@@ -8,11 +8,17 @@ print("🎬 Movie Rating System 🎬")
 print("Enter ratings from 1 to 5. Type 'over' to stop.")
 
 while True:
-    movie = input("Enter the movie you want to rate: ")
-    rate = input("Enter a rating (1-5) or 'over' to finish: ")
+    rate = input("Enter a rating (1-5) or 'over' to finish: ").strip()
     if rate.lower() == 'over':
         break 
-    
+    if rate.isdigit():
+        rating = int(rate)
+        if 1 <= rating <= 5:
+            ratings.append(rating)
+        else:
+            print("❌ Please enter a number between 1 and 5.")
+
+
 
 average_rating = sum(ratings) / len(ratings)
 highest_rating = max(ratings)
